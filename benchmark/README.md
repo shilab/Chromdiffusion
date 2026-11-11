@@ -123,6 +123,10 @@ coverage count as false negatives for every method.
 `examples/run_example.sh` runs stages 0–3 for one prediction directory. Edit the paths
 at the top of the script before running it.
 
+`examples/run_fixed_seed_backbone.sh` trains one backbone with a fixed seed, and
+`examples/run_fixed_seed_refiner.sh` refines it once per training seed and scores each run
+with stages 1–3. Both use the scripts in `../Fixed_Seed_Runs` (see its README).
+
 ## Supplementary analyses
 
 ### Pixel fidelity (Supplementary Table S5)

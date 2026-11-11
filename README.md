@@ -45,6 +45,7 @@ Chromdiffusion/
 ├── srhic/          # SRHiC backbone and ChromDiffusion scripts
 ├── preprocessing/  # GEO download to 40 × 40 model input tiles
 ├── benchmark/      # TAD and loop benchmark, plus supplementary evaluations
+├── Fixed_Seed_Runs/ # Fixed-seed copies of the refiner scripts and backbone trainers
 ├── Figures/        # Figures used in this README
 └── CITATION.cff    # Citation metadata
 ```
@@ -61,6 +62,8 @@ The results in the manuscript are labelled as follows:
 - **Vanilla-Diff** (HiCNN, DeepHiC, SRHiC): diffusion refinement without structural constraints, from `train_residual_diffusion.py` and `test_residual_diffusion.py` in `HiCNN/`, `deephic/` and `srhic/`.
 
 The other `residual_diffusion*` folders under `HiCARN/` hold earlier versions of the model from development.
+
+`Fixed_Seed_Runs/` holds fixed-seed copies of the refiner scripts and of the four backbone trainers, written after submission so that runs can be repeated exactly. The manuscript's results come from the scripts listed above. See `Fixed_Seed_Runs/README.md`.
 
 ## Getting Started
 
